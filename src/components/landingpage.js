@@ -20,25 +20,25 @@ class Landing extends Component {
                             <p> HTML/CSS | JavaScript | React | React Native | Nodejs | Express | MongoDB</p>
                             <div className="social-links">
                                 {/*LinkedIn*/}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://www.linkedin.com/in/valentine-ayim-84b085103/" rel="noopener noreferrer" target="_blank">
                                 <i className="fa fa-linkedin-square" aria-hidden="true" />
                                 </a>
                                 
 
                                 {/*Github*/}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="http://github.com/tino09" rel="noopener noreferrer" target="_blank">
                                 <i className="fa fa-github-square" aria-hidden="true" />
                                 </a>
                                 
                                 
                                 {/*Free code camp*/}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="http://twitter.com/val_tinno" rel="noopener noreferrer" target="_blank">
                                 <i className="fa fa-twitter-square" aria-hidden="true" />
                                 </a>
                                 
 
                                 {/*Youtube*/}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://www.youtube.com/channel/UC_sYH6OgV9ahqwMecbepOFQ?view_as=subscriber" rel="noopener noreferrer" target="_blank">
                                 <i className="fa fa-youtube-square" aria-hidden="true" />
                                 </a>
                                 

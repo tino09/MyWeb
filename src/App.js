@@ -9,18 +9,20 @@ function App() {
 
       <div className="demo-big-content">
     <Layout>
-        <Header className="header-color" title="Title" scroll>
+        <Header className="header-color" title={<Link style={{textDecoration:'none', color:'white'}}
+        to="/">AyimValentine.js</Link>} scroll>
             <Navigation>
                 <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
+                
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Header>
-        <Drawer title="Titl">
+        <Drawer className="header-color" title={<Link style={{textDecoration:'none', color:'black'}}
+        to="/">My Portfolio</Link>}>
             <Navigation>
                 <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
+                
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact</Link>
             </Navigation>

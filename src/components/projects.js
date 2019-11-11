@@ -12,11 +12,11 @@ class Projects extends Component {
     toggleCategories=()=>{
          if (this.state.activeTab===0){
              return (
-                <div className="project-grid">
+                <div className="project-grid" >
                  {/*Project 1*/}
                <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
                 <CardTitle style={{color:'#fff', height:'176px', background: 'black' }}> 
-                React Project #1
+                Shopping Checkout System
                 </CardTitle>
                 <CardText>
                     This is a online shopping cart that totals and presents final 
@@ -29,19 +29,18 @@ class Projects extends Component {
                     <Button colored> LiveDemo</Button>
                 </CardActions>
                 <CardMenu style={{color:'#fff'}}>
-                <IconButton name="share"/>
+                <IconButton name="share" />
                 </CardMenu>
                </Card>
 
                 {/*Project 2*/}
                 <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
                 <CardTitle style={{color:'#fff', height:'176px', background: 'black' }}> 
-                React Project #2
+                VaPay
                 </CardTitle>
                 <CardText>
-                    This is a online shopping cart that totals and presents final 
-                    shopping list before proceeding
-                    to checkout
+                Payment platform which I apply to my personal and clients websites. 
+                    I used Stripe third party checkout processor & nodeJS server side.
                 </CardText>
                 <CardActions border>
                     <Button colored> Github</Button>
@@ -56,12 +55,10 @@ class Projects extends Component {
                 {/*Project 3*/}
                 <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
                 <CardTitle style={{color:'#fff', height:'176px', background: 'black' }}> 
-                React Project #3
+                Super Eagles FanClub
                 </CardTitle>
                 <CardText>
-                    This is a online shopping cart that totals and presents final 
-                    shopping list before proceeding
-                    to checkout
+                    This is the official website of the super eagles fanclub
                 </CardText>
                 <CardActions border>
                     <Button colored> Github</Button>
@@ -72,11 +69,36 @@ class Projects extends Component {
                 <IconButton name="share"/>
                 </CardMenu>
                </Card>
-               </div>
+
+               
+               
+              </div>
                 )
          }else if(this.state.activeTab=== 1){
              return(
-                <div><h1>This is Angular</h1></div>
+                
+                <div className="project-grid">
+                 {/*NodeJS VaPAy*/}
+               <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
+                <CardTitle style={{color:'#fff', height:'176px', background: 'black' }}> 
+                VaPay
+                </CardTitle>
+                <CardText>
+                    Payment platform which I apply to my personal and clients websites. 
+                    I used Stripe third party checkout processor & nodeJS server side.
+                </CardText>
+                <CardActions border>
+                    <Button colored> Github</Button>
+                    <Button colored> CodePen </Button>
+                    <Button colored> LiveDemo</Button>
+                </CardActions>
+                <CardMenu style={{color:'#fff'}}>
+                <IconButton name="share" />
+                </CardMenu>
+               </Card>
+                
+                
+                </div>
              )
          }else if(this.state.activeTab === 2){
              return(
@@ -84,7 +106,7 @@ class Projects extends Component {
              )
          }else if(this.state.activeTab === 3){
              return(
-                <div><h1>This is MongoDB ed</h1></div>
+                <div><h1>This is the fourth project </h1></div>
              )
          }
     }
@@ -94,15 +116,15 @@ class Projects extends Component {
             <div className="category-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId)=> this.setState({activeTab: tabId})} ripple>
                 <Tab>React</Tab>
-                <Tab>Angular</Tab>
-                <Tab>VueJs</Tab>
-                <Tab>MongoDB</Tab>
+              { /* <Tab>Angular</Tab> */}
+              {/*  <Tab>VueJs</Tab> */}
+                <Tab>NodeJS</Tab>
                 </Tabs>
 
                 
                 <Grid >
                     <Cell col={12}>
-                        <div className="content">{this.toggleCategories()}</div>
+                        <div col={4} className="content">{this.toggleCategories()}</div>
                     </Cell>
                 </Grid>
                 
