@@ -1,3 +1,8 @@
+This project is my personal website and is hosted on => valentineayim.com.ng 
+follow the link to now more about me.
+
+The project built using ReactJs and Bootstrap, follow the instructions below to run code on local.  
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
