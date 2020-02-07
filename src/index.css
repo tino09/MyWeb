@@ -1,13 +1,202 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #2b5876;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.navbar ul li a {
+  color: white !important;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.navbar-brand a :hover{
+  color: linear-gradient(to top, #43c6ac, #191654) !important;
+}
+
+
+.container {
+  margin: 5px 5px;
+}
+
+.landing {
+  justify-content: center;
+  align-items: center;
+  border: 10px black;
+  margin: auto;
+
+}
+
+.avatar-img {
+  border-radius: 50%;
+ 
+} 
+
+.avatar-img img {
+  border-radius: 400%;
+}
+
+.banner-text {
+  background: #222;
+  border : 3px blue;
+  opacity: .6;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(0,68,68,70.6);
+  margin: auto;
+  text-align: center;
+}
+
+
+.banner-text h1{
+  font-size:5.5vw;
+  font-weight: bold;
+  color: white;
+}
+
+
+.banner-text p {
+  padding: 2px;
+  color: white;
+  font-size: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+}
+
+.social-links i {
+  color: white;
+  font-size: 5vw;
+  padding: 8px;
+}
+
+
+.skill {
+  height: 50%;
+  width: 50%;
+  background-color: powderblue;
+  padding: 3px;
+}
+
+.skill img{
+  height: 100px;
+  width: 80px;
+}
+
+.card {
+  margin: auto;
+  display: inline-block;
+}
+
+.card a{
+  color: white;
+}
+
+.contact-body {
+  margin: auto;
+  background: white;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.contact-grid h2{
+  font-family: 'Anton', sans-serif;
+  font-weight: bolder;
+
+}
+
+.contact-grid p {
+  font-family: 'Oxygen' sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list {
+  margin: auto;
+  list-style: none;
+  font-size:'30px'; 
+  font-family: 'Anton';
+  border: 2px black;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.5vw;
+  font-weight: bolder;
+  width: 100%;
+  padding: 10px;
+}
+
+.contact-list i {
+  font-size: 66px;
+  padding: 10px;
+}
+
+footer {
+  padding: 5px;
+  margin-top: 5px;
+  position: fixed;
+  bottom: 0px;
+}
+
+.footer {
+  color: white;
+  background: black;
+  opacity: .8;
+  position: relative;
+  width:100%;
+  bottom: 0px;
+  text-align: center;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+
+
+.footer-two {
+  background: black !important;
+  text-decoration: none;
 }
